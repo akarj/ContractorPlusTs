@@ -1,0 +1,171 @@
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #242424;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	font-weight: 500;
+	color: #646cff;
+	text-decoration: inherit;
+}
+a:hover {
+	color: #535bf2;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	place-items: center;
+	min-width: 320px;
+	min-height: 100vh;
+}
+
+#root {
+	width: 100%;
+	height: 100%;
+	display: contents;
+
+	overflow-y: auto;
+	padding-top: 2rem;
+
+	/* display: flex;
+	align-items: center;
+	justify-content: center; */
+}
+
+h1 {
+	font-size: 3.2em;
+	line-height: 1.1;
+}
+
+button {
+	border-radius: 8px;
+	border: 1px solid transparent;
+	padding: 0.6em 1.2em;
+	font-size: 1em;
+	font-weight: 500;
+	font-family: inherit;
+	background-color: #1a1a1a;
+	cursor: pointer;
+	transition: border-color 0.25s;
+}
+button:hover {
+	border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+	outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		color: #213547;
+		background-color: #ffffff;
+	}
+	a:hover {
+		color: #747bff;
+	}
+	button {
+		background-color: #f9f9f9;
+	}
+}
+
+/* index.css */
+
+body {
+	background-color: #242424;
+	color: #f0f0f0;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+form {
+	background-color: #333;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	width: 100%;
+	max-width: 600px;
+	max-height: 80%;
+	overflow-y: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: #ffffff;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+	color: #ddd;
+}
+
+input,
+textarea {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #555;
+	border-radius: 3px;
+	background-color: #444;
+	color: #fff;
+}
+
+button {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 3px;
+	background-color: #555;
+	color: #fff;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+button:hover {
+	background-color: #666;
+}
+
+p {
+	color: #ff6666;
+}
+
+input[type='text'],
+input[type='password'] {
+	width: 100%;
+	height: 20px;
+	padding: 5px 10px;
+	background-color: rgb(215, 215, 215);
+	line-height: 20px;
+	font-size: 12px;
+	color: rgb(136, 136, 136);
+	border-radius: 2px;
+	border: 1px solid rgb(114, 114, 114);
+	box-shadow: 0 1px 0 rgba(24, 24, 24, 0.1);
+	/* Add this line */
+}
+
+/* input[type='text']:hover,
+input[type='password']:hover,
+label:hover ~ input[type='text'],
+label:hover ~ input[type='password'] {
+	background: rgb(242, 242, 242) !important;
+} */
