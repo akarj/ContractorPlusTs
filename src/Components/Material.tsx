@@ -82,8 +82,8 @@ const Material: React.FC<MaterialProps> = ({
 				{materialErrors?.Quantity && <p>{materialErrors.Quantity.message}</p>}
 			</label>
 			<label>
-				Total:
-				<input type="number" value={rate * quantity} readOnly />
+				Total: {isNaN(rate) ? 0 : rate * quantity}
+				{/* <input type="number" value={rate * quantity} readOnly /> */}
 			</label>
 			<button type="button" onClick={() => removeMaterial(materialIndex)}>
 				Remove Material
